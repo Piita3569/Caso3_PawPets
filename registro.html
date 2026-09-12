@@ -4,32 +4,44 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ingresar | PawPets</title>
+    <title>Registro | PawPets</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header class="simple-header"><a class="brand" href="index.html">🐾 PawPets</a><a href="registro.html">Crear
+    <header class="simple-header"><a class="brand" href="index.html">🐾 PawPets</a><a href="login.html">Ya tengo
             cuenta</a></header>
     <main class="auth-page">
-        <form id="formularioLogin" class="formulario" novalidate>
-            <p class="eyebrow">Bienvenido de vuelta</p>
-            <h1>Ingresa a PawPets</h1>
-            <p class="form-intro">Selecciona el perfil con el que ingresarás.</p>
-            <div class="field"><label for="rol">Tipo de usuario</label><select id="rol" name="rol" required>
-                    <option value="">Seleccione un rol</option>
-                    <option value="cliente">Cliente</option>
-                    <option value="vendedor">Vendedor</option>
-                    <option value="administrador">Administrador</option>
-                </select><span id="errorRol" class="error-msg"></span></div>
-            <div class="field"><label for="email">Correo electrónico</label><input id="email" name="email" type="email"
-                    maxlength="100" autocomplete="email" required><span id="errorEmail" class="error-msg"></span></div>
-            <div class="field"><label for="password">Contraseña</label><input id="password" name="password"
-                    type="password" minlength="4" maxlength="10" autocomplete="current-password" required><span
-                    id="errorPassword" class="error-msg"></span></div>
-            <button class="btn btn-primary" type="submit">Ingresar</button>
-            <p id="mensajeLogin" class="success-msg"></p>
-            <p class="form-footer">¿No tienes cuenta? <a href="registro.html">Regístrate como cliente</a></p>
+        <form id="formularioRegistro" class="formulario" novalidate>
+            <p class="eyebrow">Nueva cuenta</p>
+            <h1>Únete a PawPets</h1>
+            <div class="field"><label for="nombre">Nombre completo</label><input id="nombre" name="nombre" type="text"
+                    maxlength="150" autocomplete="name" required><span id="errorNombre" class="error-msg"></span></div>
+            <div class="field"><label for="emailRegistro">Correo electrónico</label><input id="emailRegistro"
+                    name="emailRegistro" type="email" maxlength="100" autocomplete="email" required
+                    placeholder="nombre@correo.com"><span id="errorEmailRegistro" class="error-msg"></span></div>
+            <div class="form-row">
+                <div class="field"><label for="passwordRegistro">Contraseña</label><input id="passwordRegistro"
+                        name="passwordRegistro" type="password" minlength="4" maxlength="10" autocomplete="new-password"
+                        required><span id="errorPasswordRegistro" class="error-msg"></span></div>
+                <div class="field"><label for="confirmarPassword">Confirmar contraseña</label><input
+                        id="confirmarPassword" name="confirmarPassword" type="password" minlength="4" maxlength="10"
+                        autocomplete="new-password" required><span id="errorConfirmarPassword" class="error-msg"></span>
+                </div>
+            </div>
+            <div class="field"><label for="rut">RUT <small>sin puntos ni guion</small></label><input id="rut" name="rut"
+                    type="text" inputmode="text" minlength="8" maxlength="9" placeholder="19011022K" required><span
+                    id="errorRut" class="error-msg" aria-live="polite"></span></div>
+            <div class="form-row">
+                <div class="field"><label for="region">Región</label><select id="region" name="region" required>
+                        <option value="">Seleccione una región</option>
+                    </select><span id="errorRegion" class="error-msg"></span></div>
+                <div class="field"><label for="comuna">Comuna</label><select id="comuna" name="comuna" required
+                        disabled>
+                        <option value="">Primero seleccione región</option>
+                    </select><span id="errorComuna" class="error-msg"></span></div>
+            </div><button class="btn btn-primary" type="submit">Crear cuenta</button>
+            <p id="mensajeRegistro" class="success-msg" aria-live="polite"></p>
         </form>
     </main>
     <script src="js/validaciones.js"></script>
