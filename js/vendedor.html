@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panel del vendedor | PawPets</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="admin-page">
+    <header class="admin-header"><a class="brand" href="vendedor.html">🐾 PawPets <small>Vendedor</small></a><a
+            href="index.html">Volver a la tienda</a></header>
+    <main class="admin-layout">
+        <aside class="admin-sidebar"><a class="active" href="#productos-vendedor">Productos disponibles</a><a
+                href="#clientes-vendedor">Mis clientes</a><a href="#ventas-vendedor">Mis ventas</a></aside>
+        <section class="admin-content">
+            <p class="eyebrow">Vendedor</p>
+            <h1>Panel de ventas propias</h1>
+            <section id="productos-vendedor">
+                <h2>Productos disponibles</h2>
+                <p>El vendedor solo consulta el inventario.</p>
+                <div class="table-wrap">
+                    <table class="tabla-admin">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Producto</th>
+                                <th>Precio</th>
+                                <th>Stock</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>DOG-001</td>
+                                <td>Master Dog Adulto 15 kg</td>
+                                <td>$25.000</td>
+                                <td>12</td>
+                                <td>Disponible</td>
+                            </tr>
+                            <tr>
+                                <td>CAT-001</td>
+                                <td>Champion Cat 10 kg</td>
+                                <td>$18.000</td>
+                                <td>2</td>
+                                <td>Stock bajo</td>
+                            </tr>
+                            <tr>
+                                <td>DOG-002</td>
+                                <td>Hueso de goma</td>
+                                <td>$3.500</td>
+                                <td>20</td>
+                                <td>Disponible</td>
+                            </tr>
+                            <tr>
+                                <td>CAT-002</td>
+                                <td>Rascador para gatos</td>
+                                <td>$15.000</td>
+                                <td>8</td>
+                                <td>Disponible</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section id="clientes-vendedor">
+                <h2>Mis clientes</h2>
+                <div class="table-wrap">
+                    <table class="tabla-admin">
+                        <thead>
+                            <tr>
+                                <th>Cliente</th>
+                                <th>Correo</th>
+                                <th>Última compra</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Andrea Pérez</td>
+                                <td>andrea@gmail.com</td>
+                                <td>Pedido #PP-001</td>
+                                <td>Activo</td>
+                            </tr>
+                            <tr>
+                                <td>Juan Soto</td>
+                                <td>juan@gmail.com</td>
+                                <td>Pedido #PP-002</td>
+                                <td>Activo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section id="ventas-vendedor">
+                <h2>Mis ventas y pedidos</h2>
+                <div class="table-wrap">
+                    <table class="tabla-admin">
+                        <thead>
+                            <tr>
+                                <th>Pedido</th>
+                                <th>Cliente</th>
+                                <th>Productos</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#PP-001</td>
+                                <td>Andrea Pérez</td>
+                                <td>Master Dog Adulto 15 kg</td>
+                                <td>Pendiente</td>
+                            </tr>
+                            <tr>
+                                <td>#PP-002</td>
+                                <td>Juan Soto</td>
+                                <td>Hueso de goma</td>
+                                <td>Listo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+
+</html>
