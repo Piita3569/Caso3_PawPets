@@ -1,36 +1,3 @@
-HTML
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - PawPets</title>
-   
-</head>
-<body>
-    <header>
-        <nav>
-            <h1>PawPets</h1>
-            <div class="nav-links">
-                <a href="index.html">Inicio</a>
-                <a href="registro.html">Registro</a>
-            </div>
-        </nav>
-    </header>
-    <main class="contenedor-centrado">
-        <form id="formularioLogin" class="formulario">
-            <h2>Ingreso</h2>
-            <label>Correo:</label>
-            <input type="email" id="email" required>
-            <span id="errorEmail" class="error-msg"></span>
-            
-            <label>Contraseña:</label>
-            <input type="password" id="password" required>
-            <span id="errorPassword" class="error-msg"></span>
-            
-            <button type="submit">Ingresar</button>
-        </form>
-    </main>
-  
-</body>
-</html>
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Ingresar | PawPets</title><link rel="stylesheet" href="css/styles.css"></head><body>
+<header class="simple-header"><a class="brand" href="index.html">🐾 PawPets</a><a href="registro.html">Crear cuenta</a></header><main class="auth-page"><form id="formularioLogin" class="formulario" novalidate><p class="eyebrow">Bienvenido de vuelta</p><h1>Ingresa a PawPets</h1><p class="form-intro">Usa tu correo institucional o Gmail.</p><div class="field"><label for="email">Correo electrónico</label><input id="email" name="email" type="email" maxlength="100" autocomplete="email" required placeholder="nombre@correo.com"><span id="errorEmail" class="error-msg" aria-live="polite"></span></div><div class="field"><label for="password">Contraseña</label><input id="password" name="password" type="password" minlength="4" maxlength="10" autocomplete="current-password" required><span id="errorPassword" class="error-msg" aria-live="polite"></span></div><button class="btn btn-primary" type="submit">Ingresar</button><p id="mensajeLogin" class="success-msg" aria-live="polite"></p><p class="form-footer">¿No tienes cuenta? <a href="registro.html">Regístrate</a></p></form></main><script src="js/validaciones.js"></script></body></html>
+
