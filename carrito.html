@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carrito | PawPets</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav container"><a class="brand" href="index.html">🐾 PawPets</a>
+            <div class="nav-links always-visible"><a href="productos.html">Seguir comprando</a><a
+                    class="cart-button active" href="carrito.html">🛒 Carrito <b id="contador-carrito">0</b></a></div>
+        </nav>
+    </header>
+    <main class="container section">
+        <p class="eyebrow">Tu pedido</p>
+        <h1>Carrito de compras</h1>
+        <div id="vista-carrito" class="cart-layout">
+            <div id="items-carrito"></div>
+            <aside class="cart-summary">
+                <h2>Resumen</h2>
+                <p id="total-carrito">Total: $0</p><button class="btn btn-outline" type="button"
+                    onclick="vaciarCarrito()">Vaciar carrito</button><button class="btn btn-primary" type="button"
+                    onclick="pagar()">Finalizar compra</button>
+                <p id="mensajeCompra" class="success-msg"></p>
+            </aside>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <p class="copyright">© 2026 PawPets</p>
+    </footer>
+    <script src="js/tienda.js"></script>
+</body>
+
+</html>
