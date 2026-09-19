@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Administración de productos | PawPets</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="admin-page">
+    <header class="admin-header">
+        <a class="brand" href="admin_productos.html">🐾 PawPets <small>Admin</small></a>
+        <a href="index.html">Volver a la tienda</a>
+    </header>
+    <main class="admin-layout">
+        <aside class="admin-sidebar">
+            <a class="active" href="admin_productos.html">Productos</a>
+            <a href="admin_usuarios.html">Usuarios y clientes</a>
+            <a href="admin_reportes.html">Reportes y ventas</a>
+        </aside>
+        <section class="admin-content">
+            <p class="eyebrow">Administrador</p>
+            <h1>Administrar inventario</h1>
+            <p>El administrador puede crear, editar, eliminar productos y actualizar el stock.</p>
+            <div class="table-wrap">
+                <table class="tabla-admin">
+                    <thead><tr><th>Código</th><th>Nombre</th><th>Precio</th><th>Stock</th><th>Acciones</th></tr></thead>
+                    <tbody>
+                        <tr><td>DOG-001</td><td>Master Dog Adulto 15 kg</td><td>$25.000</td><td>12</td><td><button class="btn-editar">Editar</button> <button class="btn-danger">Eliminar</button></td></tr>
+                        <tr><td>CAT-001</td><td>Champion Cat 10 kg</td><td>$18.000</td><td>2</td><td><button class="btn-editar">Editar</button> <button class="btn-danger">Eliminar</button></td></tr>
+                        <tr><td>DOG-002</td><td>Hueso de goma</td><td>$3.500</td><td>20</td><td><button class="btn-editar">Editar</button> <button class="btn-danger">Eliminar</button></td></tr>
+                        <tr><td>CAT-002</td><td>Rascador para gatos</td><td>$15.000</td><td>8</td><td><button class="btn-editar">Editar</button> <button class="btn-danger">Eliminar</button></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
