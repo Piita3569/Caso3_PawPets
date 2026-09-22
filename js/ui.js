@@ -1,0 +1,1 @@
+// El menú queda visible y se adapta con CSS. Este archivo se mantiene para futuras mejoras.
